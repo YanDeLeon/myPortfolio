@@ -1,16 +1,47 @@
-<section class="p-10 bg-slate-50 w-full">
-    <div class="grid grid-cols-2 gap-6">
-        <img src="./src/img/yan.jpeg" alt="" class="rounded shadow-xl box-border">
-        <div class="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident expedita cumque obcaecati aspernatur, ipsum ex nostrum illum debitis quod aut. Vitae itaque ipsa distinctio molestiae tenetur perspiciatis, magni accusamus expedita.</p>
+<section class="py-5 px-10 bg-blue-100  w-full triangle overflow">
+        <div class="flex flex-row">
+            <div class="grid justify-items-center basis-1/2 items-center">
+                <img src="./src/img/yan.jpeg" alt="Julian" class="rounded-lg shadow-xl box-border w-4/5">
+            </div>
+            <div class="p-4 text-blue-900 basis-1/2"> 
+                <h2 class="text-xl text-blue-900 mb-2">Hello!👋🏼</h2> 
+                <p>
+                    My name is Julian.<br>
+                    I'm a passionate Mechatronic Engineer that loves coding. More than five years of experience as an engineer have built a
+                    programmer with solid foundations, resourceful in problem solving and with
+                    integrated assertive communication skills, which allows me to perform effectively
+                    within a work team. Planning, design, execution, testing and maintenance of
+                    engineering projects, have been tasks in which I have succeeded during my career.  
+                </p>
+            </div>
         </div>
-    </div>
 </section>
 
 
 <style>
     section {
         width: 100%;
-        overflow: visible;
+        height: auto;
     }
+
+    .triangle {
+    position: relative;
+    background: rgb(219 234 254);
+    height: 50vh;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: rgb(219 234 254) transparent transparent transparent;
+    left: 88%;
+    transform: translateX(-50%) translateY(100%);
+  }
+
+
 </style>

@@ -4,7 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'CascadiaCode','Open Sans', sans-serif;
 }
 h1,
 h2,
@@ -56,3 +56,13 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
+
+@import "section.css";
+
+@font-face {
+	font-family: 'CascadiaCode';
+	src: url('/fonts/CascadiaCode.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+  }
